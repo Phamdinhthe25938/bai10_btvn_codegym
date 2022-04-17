@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button onclick="TH1();"  >TH1</button>
+<button onclick="TH2();">TH2</button>
+<button onclick="TH3();">TH3</button>
+<h2>JavaScript Loops</h2>
+<p id="demo"></p>
+</body>
+</html>
+<script >
+  function TH1(){
+    let sum =0;
+    let number;
+    do{
+      number=parseInt(prompt("nhap vao 1 so "));
+      sum +=number
+    }
+    while (number!=0){
+    }
+    document.write("sum la"+sum)
+  }
+  function TH2(){
+    let text ='';
+    let i;
+    for (i = 0; i < 5; i++) {
+      text += "The number is " + i + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+  }
+  function TH3(){
+    let a = parseInt(prompt("nhap so a :"));
+    let total =0;
+    for (let i=1;i<=a;i++){
+      total += i;
+    }
+    alert("tong la:"+total);
+
+  }
+</script>
